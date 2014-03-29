@@ -163,5 +163,6 @@ module Discourse
       require 'rbtrace'
     end
 
+    config.assets.initialize_on_precompile = false
   end
 end
