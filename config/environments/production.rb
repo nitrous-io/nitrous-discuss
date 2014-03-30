@@ -64,5 +64,4 @@ Discourse::Application.configure do
   if emails = GlobalSetting.developer_emails
     config.developer_emails = emails.split(",")
   end
-
 end
