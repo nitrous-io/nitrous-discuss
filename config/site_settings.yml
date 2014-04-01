@@ -1,11 +1,11 @@
 required:
   title:
     client: true
-    default: 'Discourse'
-  site_description: ''
-  contact_email: ''
-  notification_email: 'info@discourse.org'
-  site_contact_username: ''
+    default: <%= GlobalSetting.site_title %>
+  site_description: <%= GlobalSetting.site_description %>
+  contact_email: <%= GlobalSetting.site_contact_email %>
+  notification_email: <%= GlobalSetting.site_notification_email %>
+  site_contact_username: <%= GlobalSetting.site_content_username %>
   logo_url:
     client: true
     default: '/images/d-logo-sketch.png'
@@ -19,9 +19,9 @@ required:
     client: true
     default: '/images/default-favicon.ico'
   apple_touch_icon_url: '/images/default-apple-touch-icon.png'
-  company_full_name: 'My Unconfigured Forum Ltd.'
-  company_short_name: 'Unconfigured Forum'
-  company_domain: 'www.example.com'
+  company_full_name: <%= GlobalSetting.site_company_full_name %>
+  company_short_name: <%= GlobalSetting.site_company_short_name %>
+  company_domain: <%= GlobalSetting.site_company_domain %>
 
 basic:
   default_locale:

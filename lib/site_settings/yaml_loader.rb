@@ -7,7 +7,8 @@ class SiteSettings::YamlLoader
   end
 
   def load
-    yaml = YAML.load_file(@file)
+    yaml = YAML.load(ERB.new(File.new(@file).read).result)
+
     yaml.keys.each do |category|
       yaml[category].each do |setting_name, hash|
         if hash.is_a?(Hash)
