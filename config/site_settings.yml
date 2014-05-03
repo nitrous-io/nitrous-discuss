@@ -2,16 +2,16 @@ required:
   title:
     client: true
     default: <%= GlobalSetting.site_title %>
-  site_description: <%= GlobalSetting.site_description %>
-  contact_email: <%= GlobalSetting.site_contact_email %>
-  notification_email: <%= GlobalSetting.site_notification_email %>
-  site_contact_username: <%= GlobalSetting.site_content_username %>
-  logo_url:
+    site_description: <%= GlobalSetting.site_description %>
+    contact_email: <%= GlobalSetting.site_contact_email %>
+    notification_email: <%= GlobalSetting.site_notification_email %>
+    site_contact_username: <%= GlobalSetting.site_content_username %>
+    logo_url:
     client: true
-    default: '/images/d-logo-sketch.png'
+    default: '/images/nitrous-logo.png'
   logo_small_url:
     client: true
-    default: '/images/d-logo-sketch-small.png'
+    default: '/images/nitrous-logo-small.png'
   digest_logo_url:
     client: false
     default: ''
